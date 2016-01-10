@@ -8,7 +8,7 @@
   <!-- Definition of Front Controller for Spring MVC framework responsible for resolving HTTP requests
   	   We dont need to define spring listener for loading the context; since spring-mvc by default
   	   will load the context with name projectname-servlet.xml i.e blog-servlet.xml-->
-  <servletssssss>
+  <servlet>
   	<servlet-name>blog</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	    <init-param>

@@ -1,0 +1,14 @@
+rootProject.name = 'blog'
+
+def String[] javaModules = [
+    'core',
+    'web'
+]
+
+include(javaModules)
+
+javaModules.each { name ->
+    def project = findProject(":$name")
+    project.buildFileName = "${name}.gradle"
+    project.name = "vassilis-blog-$name"
+}

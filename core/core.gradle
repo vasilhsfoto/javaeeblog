@@ -1,0 +1,14 @@
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile "mysql:mysql-connector-java:5.1.26"
+    compile "org.springframework:spring-jdbc:${springframeworkVersion}"
+
+    compile "org.mybatis:mybatis-spring:${mybatisSpringVersion}"
+    compile "org.mybatis:mybatis:${mybatisVersion}"
+
+    compile "org.springframework.security:spring-security-core:${springSecurityVersion}"
+    compile "org.springframework.security:spring-security-web:${springSecurityVersion}"
+    compile "org.springframework.security:spring-security-config:${springSecurityVersion}"
+}

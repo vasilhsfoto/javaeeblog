@@ -1,0 +1,20 @@
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+
+    compile project(":vassilis-blog-core")
+
+    compile "org.springframework:spring-webmvc:${springframeworkVersion}"
+    compile "org.springframework:spring-web:${springframeworkVersion}"
+
+    compile "org.apache.tiles:tiles-core:${apacheTilesVersion}"
+    compile "org.apache.tiles:tiles-request-servlet:1.0.3"
+    compile "org.apache.tiles:tiles-jsp:${apacheTilesVersion}"
+
+    compile "javax.servlet:jstl:${javaServletVersion}"
+    compile "javax.servlet:servlet-api:2.5"
+
+}

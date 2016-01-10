@@ -1,0 +1,38 @@
+ext.log4jVersion = '1.2.17'
+ext.slf4jVersion = '1.5.6'
+ext.springframeworkVersion = '3.2.9.RELEASE'
+ext.junitVersion = '4.11'
+ext.apacheTilesVersion = '3.0.0'
+ext.javaServletVersion = '1.2'
+ext.mybatisVersion = '3.2.3'
+ext.mybatisSpringVersion = '1.2.1'
+ext.springSecurityVersion = '3.1.4.RELEASE'
+
+description = 'vassilis-blog'
+
+allprojects {
+    group 'vassilis.foto'
+    version '1.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        testCompile "junit:junit:${junitVersion}"
+
+        compile "log4j:log4j:${log4jVersion}"
+        compile "org.slf4j:slf4j-log4j12:${slf4jVersion}"
+
+        compile "org.springframework:spring-test:${springframeworkVersion}"
+
+        compile "commons-fileupload:commons-fileupload:1.2"
+        compile "commons-io:commons-io:1.4"
+        compile "commons-dbcp:commons-dbcp:1.4"
+        compile "commons-lang:commons-lang:2.6"
+    }
+}

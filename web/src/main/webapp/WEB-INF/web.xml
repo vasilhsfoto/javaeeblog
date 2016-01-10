@@ -3,14 +3,18 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
+<<<<<<< HEAD
   <display-name>vassilis-blog-my-blog</display-name>
+=======
+  <display-name>delk-blog</display-name>
+>>>>>>> 5ef334f60b9ec3bdb403447168955256fac16d39
 
   <!-- Definition of Front Controller for Spring MVC framework responsible for resolving HTTP requests
   	   We dont need to define spring listener for loading the context; since spring-mvc by default
   	   will load the context with name projectname-servlet.xml i.e blog-servlet.xml-->
   <servlet>
-  	<servlet-name>blog</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	<servlet-name>blogaki</servlet-name>
+    	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	    <init-param>
 	        <param-name>contextConfigLocation</param-name>
 	        <param-value>/WEB-INF/classes/blog-servlet.xml</param-value>

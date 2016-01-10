@@ -9,7 +9,7 @@
   	   We dont need to define spring listener for loading the context; since spring-mvc by default
   	   will load the context with name projectname-servlet.xml i.e blog-servlet.xml-->
   <servletssssss>
-  	<servlet-name>blog</servlet-name>
+  	<servlet-name>blogaki</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 	    <init-param>
 	        <param-name>contextConfigLocation</param-name>
